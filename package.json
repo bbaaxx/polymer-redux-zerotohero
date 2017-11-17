@@ -19,6 +19,7 @@
     "spectacle": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.32",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
@@ -53,7 +54,7 @@
     "redbox-react": "^1.5.0",
     "rimraf": "^2.6.2",
     "style-loader": "^0.19.0",
-    "surge": "latest",
+    "surge": "^0.19.0",
     "url-loader": "^0.6.2",
     "webpack": "3.8.1",
     "webpack-dev-middleware": "^1.12.0",
