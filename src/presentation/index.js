@@ -2,10 +2,10 @@ import React from "react";
 import { Deck } from "spectacle";
 import preloader from "spectacle/lib/utils/preloader";
 
-import { getTheme } from "./theme";
-import { getSlides } from "./slides";
-import { getImages } from "./images";
-import { importStyles } from "./styles";
+import { getTheme } from "./utils/theme";
+import { getSlides } from "./utils/slides";
+import { getImages } from "./utils/images";
+import { importStyles } from "./utils/styles";
 
 importStyles();
 

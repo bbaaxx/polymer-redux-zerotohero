@@ -1,6 +1,6 @@
 import { dirCtxToObj } from "./helpers";
 
-const trimRxp = RegExp("(\.\/|\.(gif|svg|jpg|jpeg|tiff|png)$)", "g");
+const trimRxp = RegExp("(./|.(gif|svg|jpg|jpeg|tiff|png)$)", "g");
 
 /**
  * Remove the ./ and extension to the file names to make pretty keys
@@ -12,7 +12,7 @@ const trimKeys = (obj) => Object.keys(obj)
   .reduce((o, i) => Object.assign(o, i), {});
 
 // have to use the /r/x form of RegExp here to make webpack happy
-const ctx = require.context("../assets", true, /\.(gif|svg|jpg|jpeg|tiff|png)$/);
+const ctx = require.context("../../../assets", true, /\.(gif|svg|jpg|jpeg|tiff|png)$/);
 const images = trimKeys(dirCtxToObj(ctx));
 
 /**

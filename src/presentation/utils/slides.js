@@ -1,5 +1,5 @@
 import { dirCtxToObj } from "./helpers";
-const ctx = require.context("./slides", true, /\.js$/);
+const ctx = require.context("../slides", true, /\.js$/);
 
 export const allSlides = dirCtxToObj(ctx);
 
