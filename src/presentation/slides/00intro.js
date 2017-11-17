@@ -1,16 +1,15 @@
 import React from "react";
-import { Slide, Heading, Text } from "spectacle";
+import { Slide, Heading, Text, Image } from "spectacle";
+import { getImages } from "../utils/images.js";
 
 export const slide = (key) => (
   <Slide key={key} transition={["zoom"]} bgColor="primary">
-    <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-      Polymer
+    <Image src={getImages()['polymer-loves-redux']} margin="0px auto 40px" />
+    <Heading size={4} caps lineHeight={1} textColor="secondary">
+      Comunicacion entre componentes
     </Heading>
-    <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-      Comunicacion entre componentes (con Redux)
-    </Heading>
-    <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-      open the presentation/index.js file to get started
+    <Text caps margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+      Polython 2017 - CDMX
     </Text>
   </Slide>
 );
