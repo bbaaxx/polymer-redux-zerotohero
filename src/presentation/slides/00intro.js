@@ -9,7 +9,7 @@ export const slide = (key) => (
       Comunicacion entre componentes
     </Heading>
     <Text caps margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-      Polython 2017 - CDMX
+      Sngular KIT's 2018
     </Text>
   </Slide>
 );
